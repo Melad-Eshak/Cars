@@ -302,6 +302,17 @@ display: block;
     color: black;
     background-color: #ff5722;
 }
+.about-us .about-line{
+    margin-left: 350px;
+}
+.about-us .line{
+    width: 60px;
+    height: 2px;
+    background-color: #ff5722;
+    float: left;
+    margin-top: 100px;
+    margin-left: 10px;
+}
 /* ..............................////////////////////////////////////////////////////////////////////////................... */
 .sprite-container{
     width: 80%;
