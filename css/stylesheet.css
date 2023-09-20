@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 3000px;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header i{
+    font-size: 20px;
+    color: #ff5722;
+    margin-left: -16px;
+    margin-top: 12px;
+}
+.header-h1{
+    font-size: 50px;
+    font-family: 'Borel', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin-left: 70px;
+    float: left;
+    color:  #ff5722;
+    text-shadow: 1px 3px 0px #3d3b3b;
+}
+.header-ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 25px;
+    font-size: 22px;
+    font-family:sans-serif;
+}
+.header-ul{
+    float: right;
+    margin-top: 15px;
+    margin-right:100px ;
+
+}
+.header-ul .li-i{
+    margin-right: 80px;
+}
+.header-ul a{
+    text-decoration: none;
+    color: white;
+}
+.header-ul i{
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+.header-ul li{
+    position: relative;
+    padding: 10px;
+}
+.header-ul li::before{
+    content: "";
+    position: absolute;
+    border: 2px solid gold;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+   opacity: 0;
+}
+.header-ul li:hover:before{
+    border-width: 0 3px;
+    height: 109%;
+    width: 100%;
+   opacity: 1;
+}
+header .menu-bar ul {
+    display: flex;
+    width: 300px;
+}
+.menu-bar a{
+    margin: 15px;
+}
+header ul li .menu-bar{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: gray;
+   margin-top: 25px;
+   margin-left: 25px;
+    border-radius: 5px;
+   padding-left: 30px;
+}
+header ul li:hover .menu-bar{
+display: block;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+.header-ul li::after{
+    content: "";
+    position: absolute;
+    border: 2px solid gold;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+   opacity: 0;
+   transition: 0.5s;
+}
+.header-ul li:hover::after{
+    border-width: 3px 0;
+    height: 100%;
+    width: 103%;
+   opacity: 1;
+}
+
+/* ......................../////////////////////////////////////////////////////////////////////////////////...................................... */
+
+.parent1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../images/home-bgg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.parent1{
+  
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0,0);
+}
+.home-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.home-img img{
+    width: 100%;
+    height: 100vh;
+}
+.home-info{
+    padding-top: 200px;
+
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.home-info .home-h1{
+    font-size: 90px;
+    color: #ff5722;
+    font-family: sans-serif;
+    -webkit-text-stroke: 3px white;
+}
+.home-info .home-h2{
+    font-size: 90px;
+    color: white;
+    font-family: sans-serif;
+}
+.home-info .home-p{
+    font-size: 18px;
+    color: gray;
+    line-height: 30px;
+    margin-top: 30px;
+}
+.home-info .home-btn{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0,0);
+    color: #ff5722;
+    border: 5px solid #ff5722;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.home-info .home-btn:hover{
+    color: black;
+    background-color: #ff5722;
+}
+/* ...................................//////////////////////////////////////////////////////////////////////////////............................... */
+.container2{
+    width: 100%;
+    height: 500px;
+}
+.category-h1{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.category-hr{
+    width: 90px;
+    height: 3px;
+    background-color: #ff5722;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+.category-title:hover .category-hr {
+    width: 120px;
+}
+.parent2{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    column-gap: 10px;
+}
+.category-item img{
+    width: 100%;
+    height: 300px;
+}
+.category-item .category-h4{
+    color: gray;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+.category-item .category-h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+}
+.category-item i{
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    background-color: #ff5722;
+    text-align: center;
+    float: right;
+    visibility: hidden;
+    opacity: 0;
+}
+.category-item:hover i{
+    visibility: visible;
+    opacity: 1;
+}
+.parent3{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    column-gap: 25px;
+}
+.about-img img{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.about-img img:hover{
+    transform: scale(1.05,1.05);
+}
+.about-us .about-h4{
+    color: #ff5722;
+    margin-top: 80px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter; 
+}
+.about-us .about-h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+.about-us .about-p{
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+.about-us .about-btn{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0,0);
+    color: #ff5722;
+    border: 5px solid #ff5722;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.about-us .about-btn:hover{
+    color: black;
+    background-color: #ff5722;
+}
+/* ..............................////////////////////////////////////////////////////////////////////////................... */
+.sprite-container{
+    width: 80%;
+    margin: auto;
+}
+.sprites{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    margin-top: 50px;
+}
+.sprites-item{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid aliceblue;
+}
+.sprite-img{
+    background-image: url(../images/service-icon.png);
+    background-repeat: no-repeat;
+    height: 65px;
+}
+.imgs1{
+    background-position: center 5px;
+    transition: all .5s;
+}
+.sprites-item:hover .imgs1{
+    background-position: center -86px;
+}
+.imgs2{
+    background-position: center -180px;
+    transition: all .5s;
+}
+.sprites-item:hover .imgs2{
+    background-position: center -273px;
+}
+.imgs3{
+    background-position: center -366px;
+    transition: all .5s;
+}
+.sprites-item:hover .imgs3{
+    background-position: center -455px;
+}
+.imgs4{
+    background-position: center -549px;
+transition: all .5s;
+}
+.sprites-item:hover .imgs4{
+    background-position: center -639px;
+}
+.imgs5{
+    background-position: center -734px;
+transition: all .5s;
+}
+.sprites-item:hover .imgs5{
+    background-position: center -826px;
+}
+.sprite-info h2{
+    color: white;
+}
+.sprite-info p{
+    margin-top: 5px;
+    color: rgb(23, 187, 173);
+}
+hr{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    height: 2px;
+    background-color: rgb(20, 158, 163)
+}
+/* ..........................................///////////////////////////////////////////////////////.......................... */
+.feat-h1{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.feat-hr{
+    width: 90px;
+    height: 3px;
+    background-color: #ff5722;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+.feat-title:hover .feat-hr {
+    width: 120px;
+}
+.feat-ul{
+    width: 600px;
+    margin: auto;
+}
+.feat-ul li{
+    color: white;
+    display: inline;
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-left: 80px;
+}
+.parent4{
+    width: 80%;
+    height: 950px;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 15px 15px;
+}
+.product-item{
+    position: relative;
+}
+.product-img img{
+    width: 100%;
+    height: 300px;
+}
+.product-overlay img{
+    width: 100%;
+    height: 300px;
+}
+.product-overlay ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.product-overlay ul i{
+    color: white;
+    background-color:#ff5722;
+    font-size: 20px;
+    padding: 10px;
+}
+.product-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:scalex(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.product-item:hover .product-overlay{
+    transform:scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+.product-info{
+    text-align: center;
+}
+.product-info p{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.product-info i{
+    color: #ff5722;
+    margin-top: 15px;
+}
+.product-info .order-btn{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0,0);
+    color: #ff5722;
+    border: 5px solid #ff5722;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+.product-info .order-btn:hover{
+    color: black;
+    background-color: #ff5722;
+}
+
+
+
+
